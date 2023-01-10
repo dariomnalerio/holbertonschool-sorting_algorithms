@@ -34,7 +34,7 @@ void insertion_sort_list(listint_t **list)
  * @previous: The node with the smallest value
 */
 void _swap(listint_t *current, listint_t *previous)
-{	
+{
 	if (current->next)
 		current->next->prev = previous;
 	previous->next = current->next;
