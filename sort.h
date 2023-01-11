@@ -17,7 +17,10 @@ typedef struct listint_s
 } listint_t;
 void insertion_sort_list(listint_t **list);
 void print_list(const listint_t *list);
+void print_array(const int *array, size_t size);
 listint_t *add_nodeint_at_index(listint_t **head, int n, int index);
 listint_t *get_nodeint_at_index(listint_t *head, int index);
 int remove_nodeint_at_index(listint_t **head, int index);
+void quick_sort(int *array, size_t size);
+void lomuto(int *array, size_t size, int *array_print, size_t size_print);
 #endif
